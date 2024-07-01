@@ -1,6 +1,6 @@
-const getWeatherData = () => {
+const getWeatherData = (location) => {
   //request data for a location
-  const requestUrl = (location) => {
+  const requestUrl = () => {
     //api key
     const apiKey = "key=848757827fc14e0bba3160706240107";
     const baseLink = "http://api.weatherapi.com/v1/current.json?";
@@ -8,19 +8,19 @@ const getWeatherData = () => {
     return `${baseLink}${apiKey}&q=${location}`;
   };
 
-  const getData = async (location) => {
-    const url = requestUrl(location);
+  const getData = async () => {
+    const url = requestUrl();
 
     try {
       const response = await fetch(url, { mode: "cors" });
       const data = await response.json();
       return data;
     } catch (err) {
-      return "error was ", err;
+      return err;
     }
   };
 
-  return getData("paris");
+  return getData();
 };
 
 export { getWeatherData };

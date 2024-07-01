@@ -4,3 +4,22 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+location-input {
+  background-color: white;
+}
+
+locattion-input.error {
+  background-color: rgb(255, 175, 175);
+}
+
+span.valid {
+  display: none;
+  text-align: center;
+}
+
+span.invalid {
+  text-align: center;
+  display: block;
+  color: red;
+}

@@ -1,10 +1,4 @@
 import "./style.css";
-import { getWeatherData } from "./get-weather-data.js";
+import { checkInput } from "./check-input.js";
 
-getWeatherData()
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((error) => {
-    console.error("Error fetching weather data:", error);
-  });
+checkInput();
