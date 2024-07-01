@@ -1,4 +1,5 @@
 import { getWeatherData } from "./get-weather-data.js";
+import { showWeatherInfo } from "./show-info.js";
 
 const checkInput = () => {
   const locationInput = document.getElementById("location-input");
