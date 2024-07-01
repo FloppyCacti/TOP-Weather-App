@@ -1,4 +1,5 @@
 import "./style.css";
+import "@fontsource/roboto";
 import { checkInput } from "./check-input.js";
 import { getWeatherData } from "./get-weather-data.js";
 import { showWeatherInfo } from "./show-info.js";
