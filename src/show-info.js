@@ -7,8 +7,8 @@ const showWeatherInfo = (data) => {
 
   document.getElementById("humidity").innerHTML = humidity;
   document.getElementById("uv").innerHTML = uv;
-  document.getElementById("tempC").innerHTML = tempC;
-  document.getElementById("tempF").innerHTML = tempF;
+  document.getElementById("tempC").innerHTML = `${tempC}°C`;
+  document.getElementById("tempF").innerHTML = `${tempF}°F`;
   document.getElementById("condition").innerHTML = condition;
 };
 
