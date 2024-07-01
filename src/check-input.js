@@ -40,6 +40,7 @@ const checkInput = () => {
         error.innerHTML = "";
         error.className = "valid";
         console.log("Weather data:", data);
+        showWeatherInfo(data);
       }
     }
   });

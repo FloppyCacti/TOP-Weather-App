@@ -3,6 +3,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 location-input {
@@ -22,4 +23,26 @@ span.invalid {
   text-align: center;
   display: block;
   color: red;
+}
+
+div#content {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+}
+
+div#other-info,
+div#temperature,
+div#condition {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#temperature > div,
+p#humidity > div,
+p#uv > div {
+  flex: 1;
 }
