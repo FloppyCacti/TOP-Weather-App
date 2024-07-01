@@ -10,7 +10,7 @@ location-input {
   background-color: white;
 }
 
-locattion-input.error {
+location-input.error {
   background-color: rgb(255, 175, 175);
 }
 
@@ -30,6 +30,7 @@ div#content {
   flex-direction: column;
   height: 300px;
   width: 300px;
+  text-align: center;
 }
 
 div#other-info,
@@ -39,10 +40,35 @@ div#condition {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 div#temperature > div,
+div#condition,
+div#other-info > div {
+  background-color: rgb(197, 197, 197);
+}
+
+div#condition {
+  font-size: 40px;
+}
+
+div#temperature > div,
+div#other-info > div {
+  flex: 1;
+}
+
+p#humidity,
+p#uv {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 p#humidity > div,
 p#uv > div {
   flex: 1;
+  background-color: rgb(197, 197, 197);
 }
