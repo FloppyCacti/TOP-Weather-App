@@ -27,12 +27,17 @@ span.invalid {
   color: red;
 }
 
+body > div {
+  background-color: aliceblue;
+}
+
 div#content {
   display: flex;
   flex-direction: column;
   height: 300px;
   width: 300px;
   text-align: center;
+  margin: 0px auto 3px auto;
 }
 
 div#other-info,
@@ -70,5 +75,6 @@ div#uv {
 }
 
 div#other-info > div {
+  width: 100%;
   font-size: 15px;
 }
