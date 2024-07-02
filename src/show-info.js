@@ -1,9 +1,12 @@
+import { addBackground } from "./add-background";
+
 const showWeatherInfo = (data) => {
   const content = document.getElementById("#content");
   const [tempC, tempF] = [data.current.feelslike_c, data.current.feelslike_f];
   const condition = data.current.condition.text;
   const uv = data.current.uv;
   const humidity = data.current.humidity;
+  addBackground(condition);
 
   function getColorForUV(uvIndex) {
     const colors = [
